@@ -1,12 +1,12 @@
-Overview:-
+**Overview**:-
 
 This Java program demonstrates the Producer-Consumer problem using a LinkedBlockingQueue from the java.util.concurrent package. It consists of producers that generate and add items to a shared buffer and consumers that remove and process these items from the buffer. The program allows multiple producers and consumers to operate concurrently.
 
-Requirements:-
+**Requirements**:-
 Java Development Kit (JDK) 8 or higher.
 
-Structure:-
-Buffer: A thread-safe class using LinkedBlockingQueue to store integers. It provides add and remove methods to interact with the queue.
+**Structure**:-
+**Buffer**: A thread-safe class using LinkedBlockingQueue to store integers. It provides add and remove methods to interact with the queue.
 class Buffer {
 private LinkedBlockingQueue<Integer> queue;
 
@@ -25,7 +25,7 @@ private LinkedBlockingQueue<Integer> queue;
 
 }
 
-Producer: Implements Runnable. Producers generate items (integers) and add them to the buffer.
+**Producer**: Implements Runnable. Producers generate items (integers) and add them to the buffer.
 class Producer implements Runnable {
 private Buffer buffer;
 private int totalItems;
@@ -51,7 +51,7 @@ private int totalItems;
 
 }
 
-Consumer: Implements Runnable. Consumers remove items from the buffer and process them.
+**Consumer**: Implements Runnable. Consumers remove items from the buffer and process them.
 class Consumer implements Runnable {
 private Buffer buffer;
 
@@ -78,11 +78,11 @@ private Buffer buffer;
 
 }
 
-ProducerConsumerExample: Contains the main method to run the program, handling user input for setting up producers and consumers.
+**ProducerConsumerExample**: Contains the main method to run the program, handling user input for setting up producers and consumers.
 
-Compilation and Execution:-
-Compile:-
+**Compilation and Execution**:-
+**Compile**:-
 javac ProducerConsumerExample.java
 
-Execute:-
+**Execute**:-
 java ProducerConsumerExample
